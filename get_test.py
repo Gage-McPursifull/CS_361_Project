@@ -34,8 +34,8 @@ def get_info(store):
 
 if __name__ == '__main__':
 
-    pie_data = get_info("raymond ltd")[0]
-    pie_labels = get_info("raymond ltd")[1]
+    pie_data = get_info("nike")[0]
+    pie_labels = get_info("nike")[1]
     print(pie_data)
     print(pie_labels)
 

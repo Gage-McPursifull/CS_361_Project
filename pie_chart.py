@@ -1,12 +1,3 @@
-# Gage McPursifull
-# CS 361
-# Creates a socket connection to gaia.cs.umass.edu, and sends a GET request to
-# /wireshark-labs/HTTP-wireshark-file3.html. This program differs from small_get.py, in that it can handle a GET request
-# of any size.
-# Sources: Textbook - K&R: Chapter 2.7 TCPServer.py
-# https://zetcode.com/python/socket/ - Echo client server example
-
-
 import socket
 
 HOST_1 = ''  # Using the IP address specified in the instructions
@@ -58,8 +49,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server:
                 continue
 
             # If a character is a number or '.', add it to rev
-            if 47 < ord(info_to_parse[index]) < 58 or ord(info_to_parse[index]) == 45\
-                    or ord(info_to_parse[index]) == 46:
+            if 45 < ord(info_to_parse[index]) < 58:
                 rev += info_to_parse[index]
 
             # If a character is m or b, it signifies the end of relevant numbers. m for million, b for billion.
